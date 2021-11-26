@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js">
+<!--<![endif]--><!-- head
+    ============================================================================ --><head>
+
+
+        <!-- Basic Info
+        ======================================================================== -->
+        <title>vub</title>
+        <meta charset="utf-8">
+        <meta name="author" content="For Best Clients, s.r.o.">
+        <meta name="robots" content="index follow">
+        <meta name="googlebot" content="index follow">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+
+        <!-- Mobile Configurations
+        ======================================================================== -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+        <!-- Google Fonts
+        ======================================================================== -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" type="text/css">
+
+        <!--  CSS Files
+        ======================================================================== -->
+        <link rel="stylesheet" href="js/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/social-icons.css">
+        <link rel="stylesheet" href="js/plugins/swiper/css/swiper.min.css">
+        <link rel="stylesheet" href="js/plugins/mediaelement/css/mediaelementplayer.min.css">
+        <link rel="stylesheet" href="js/plugins/fancybox/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="js/plugins/wow/css/animate.min.css">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!--  Head JS Libs
+        ======================================================================== -->
+        <script src="js/vendor/modernizr-custom.js"></script>
+
+        <style>
+        pre {
+          background-color: #333;
+          color: white;
+          border: 1px solid black;
+        }
+        pre i {
+          color: #777;
+        }
+        pre span.entity {
+          color: yellow;
+        }
+        pre span.variable {
+          color: red;
+        }
+        pre span.url {
+          color: violet;
+        }
+        pre span.argument {
+          color: orange;
+        }
+        </style>
+
+    </head><!-- /End head -->
+
+    <!-- body
+    ============================================================================ -->
+    <body class="full-width-page">
+
+        <!-- UP Button
+        ======================================================================== -->
+        <div id="up-button"><a href="javascript:void(0)" title="To Top"><i class="fa fa-angle-up"></i></a></div>
+
+        <!-- Main Wrapper
+        ======================================================================== -->
+        <div id="main-wrapper">
+        <!-- Header 10
+            ==================================================================== -->
+            <header id="header-section-10" class="header-section header-style-10">
+                <!-- Header Section Container -->
+                <div class="header-section-container">
+
+
+                    <!-- Top Header -->
+                    <div class="top-header">
+                        <!-- container -->
+                        <div class="container">
+                            <!-- row -->
+                            <div class="row">
+
+
+                                <!-- col-md-12 -->
+                                <div class="col-md-12">
+
+
+                                    <!-- Navbar Header -->
+                                    <div class="navbar-header">
+                                        <!-- Logo -->
+                                        <a href="#" class="navbar-brand" title="VUB tutorial">
+                                            <img src="images/logo.png" alt="LUNE Logo">
+                                        </a><!-- /End Logo -->
+                                    </div><!-- /End Navbar Header -->
+
+
+                                </div><!-- /End col-md-12 -->
+
+
+                            </div><!-- /End row -->
+                        </div><!-- /End container -->
+                    </div><!-- /End Top Header -->
+
+
+                </div><!-- /End Header Section Container -->
+            </header><!-- /End Header 10 --><!-- Hero 1
+            ==================================================================== -->
+            <div id="hero-section-1" class="hero-section white-section section-lg-padding border-bottom">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect gfort-image">
+                        <img src="images/hero/hero-001-1.jpg" alt="Parallax Image" class="mobile-image" style="top: -175px; transform: translate(-50%, 0px);">
+                        <img src="images/hero/hero-001.jpg" alt="Parallax Image" style="top: -175px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container white-content remove-white-content text-center">
+
+                                    <!-- Title -->
+                                    <h1>VÚB eCard plugin</h1>
+
+                                    <!-- Description -->
+                                    <p>Návod pre implementáciu PHP VÚB eCard pluginu</p>
+
+                                    <!-- Buttons -->
+                                    <a href="#content-section-4" title="Predpripravene riesenia" class="btn btn-gfort wave-effect">Predpripravené riešenia</a>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End Hero 1 --><!-- Content 1
+            ==================================================================== -->
+            <div id="content-section-1" class="content-section white-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container text-center">
+
+                                    <!-- Title -->
+                                    <h2>Základné predpoklady</h2>
+
+                                    <!-- Description -->
+                                    <p>Knižnica je určená pre platformu PHP. Pre svoj úspešný chod, nieje potrebná databáza. Logovanie komunikácie je pomocou textových súborov.</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container" style="height: 200px;">
+
+                                    <!-- Icon -->
+                                    <i class="fa fa-code circle-icon-block circle-icon-block-lg"></i>
+
+                                    <!-- Title -->
+                                    <h4>minimálna verzia PHP 5.4</h4>
+
+                                    <!-- Description -->
+                                    <p>Minimálna verzia, pre ktorú je garantovaná plná funkčnosť je PHP verzie 5.4. Kompatibilita s vyššími verziami je definovaná na základe spätnej kompatibiliti PHP</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container" style="height: 200px;">
+
+                                    <!-- Icon -->
+                                    <i class="fa fa-lock circle-icon-block circle-icon-block-lg"></i>
+
+                                    <!-- Title -->
+                                    <h4>VÚB eCard prihlasovanie</h4>
+
+                                    <!-- Description -->
+                                    <p>Nutnou podmienkou funkčnosti, je nastavenie VÚB Client ID (prihlasovanie) a VÚB Store Key (kľúc).</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container" style="height: 200px;">
+
+                                    <!-- Icon -->
+                                    <i class="fa fa-file-text-o circle-icon-block circle-icon-block-lg"></i>
+
+                                    <!-- Title -->
+                                    <h4>Chybové hlásenia</h4>
+
+                                    <!-- Description -->
+                                    <p>Systém automaticky vytvára subory, ktoré obsahujú zoznam chýb, ktore sa vyskytnú počas chodu aplikácie.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End Content 1 --><!-- CTA 4
+            ==================================================================== -->
+            <div id="cta-section-4" class="cta-section black-section section-xs-padding">
+                <!-- Section Container -->
+                <div class="section-container">
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect gfort-background">
+                        <img src="images/cta/cta-004.jpg" alt="Parallax Background Image" style="top: 0px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- CTA Block -->
+                            <div class="col-md-12 cta-block">
+                                <!-- CTA Block Container -->
+                                <div class="cta-block-container white-content">
+
+                                    <!-- Title -->
+                                    <h3>Tip: API v sebe neuchováva žiadne informácie o platobných kartách klientov</h3>
+
+                                </div><!-- /End CTA Block Container -->
+                            </div><!-- /End CTA Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End CTA 4 --><!-- Content 4
+            ==================================================================== -->
+            <div id="content-section-4" class="content-section white-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container text-center">
+
+                                    <!-- Title -->
+                                    <h2>Predpripravené riešenia</h2>
+
+                                    <!-- Description -->
+                                    <p>Okrem PHP knižnice, pre ktorú je potrebné spraviť integráciu manuálne, balíček obsahuje aj zásuvné moduly pre dvojicu najrozširenejších eshop systémov <a href="https://magento.com">Magento</a>, <a href="https://www.joomla.org">Joomla</a>, <a href="https://woocommerce.com">WooCommerce</a>.</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                    <p>Pohodlné VÚB eCard rozhranie poskytuje aj obľúbený slovenský eshop systém <a href="http://www.grandus.sk">Grandus</a>.</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/content-001.jpg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="http://vub.forbestclients.com/plugins/magento/VUBeCard-0.0.3.tgz" title="Stiahnuť Magento plugin" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-download"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>Magento</h4>
+
+                                    <!-- Description -->
+                                    <p>Magento je e-commerce platforma postavená na open source technológií, ktorá poskytuje online obchodníkom flexibilný systém nákupného procesu, ako aj kontrolu nad vzhľadom, obsahom a funkčnosťou ich internetového obchodu. Magento ponúka výkonný marketing, optimalizáciu pre vyhľadávače a nástroje na správu katalógu, vrátane bezproblémovej integrácie VÚB eCard riešenia.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/logo-woocommerce.jpeg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="http://vub.forbestclients.com/plugins/wooocommerce/woocommerce-gateway-vub.zip" title="Stiahnuť WooCommerce plugin" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-download"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>WooCommerce</h4>
+
+                                    <!-- Description -->
+                                    <p>WooCommerce je populárny doplnok elektronického obchodu pre WordPress. Umožňuje jednoduché vytváranie a správu obsahu eshopu s primeranou úrovňou flexibility a niekoľkými dôležitými funkciami, ako je správa produktov, bezpečné platby a integrácia dopravy.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/content-002.jpg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="http://vub.forbestclients.com/plugins/joomla/vubecard-v0.0.2.zip" title="Stiahnuť Joomla plugin" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-download"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>Joomla</h4>
+
+                                    <!-- Description -->
+                                    <p>Joomla! je bezplatný a open-source redakčný systém (CMS) na tvorbu a publikovanie webového obsahu. Je postavený na webovom aplikačnom rámci model-view-controller, ktorý možno použiť nezávisle od CMS. Naše predpripravené riešenie je konkétne pre VirtueMart eshop riešenie do Joomla! systému.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/content-003.jpg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="http://grandus.sk" title="Eshop system Grandus" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-external-link"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>Grandus</h4>
+
+                                    <!-- Description -->
+                                    <p>Je inovatívna slovenská e-commerce platforma určená pre náročnejších zákaznikov so špecifickými požiadavkami na prepojenie eshopu s vlastným skladovým hospodárstvom, čí inými systémami tretích strán s bohatou ponukou pokročilých eshop funkcionalít. Platforma zároveň ponúka možnosť vývoja vlastných, namieru šitých modulov prevádzkovateľom systému. Plná podpora VÚB eCard riešenia je už základnej výbave.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/content-004.jpg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="#timeline-section-2" title="Marketing" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-angle-double-down"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>Vlastná integrácia (PHP)</h4>
+
+                                    <!-- Description -->
+                                    <p>V prípade, že vlastníte iný systém na platforme PHP, tu sa nachádza popis integrácie.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+                            <!-- Content Block -->
+                            <div class="col-md-4 col-sm-6 content-block">
+                                <!-- Content Block Container -->
+                                <div class="content-block-container plugin-container">
+
+                                    <!-- Image Block -->
+                                    <div class="image-block">
+                                        <!-- Image Block Container -->
+                                        <div class="image-block-container">
+
+                                            <!-- Image -->
+                                            <img src="images/content/npm-logo.jpg" alt="Image Block">
+
+                                            <!-- Buttons -->
+                                            <a href="https://www.npmjs.com/package/vub-ecard" title="Marketing" class="btn-gfort-circle btn-gfort-circle-md wave-effect"><i class="fa fa-external-link"></i></a>
+
+                                        </div><!-- /End Image Block Container -->
+                                    </div><!-- /End Image Block -->
+
+                                    <!-- Title -->
+                                    <h4>Vlastná integrácia (JavaScript)</h4>
+
+                                    <!-- Description -->
+                                    <p>Npm je balíčkovací systém určený pre Javascript. Vďaka nemu je možné jednoducho inštalovať a spravovať balíčky v rámci vášho projektu. NPM baličkovací systém je najpoužívanejší a je súčasťou Vašej inštalácie Node.js.</p>
+
+                                </div><!-- /End Content Block Container -->
+                            </div><!-- /End Content Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End Content 4 --><!-- CTA 4
+            ==================================================================== -->
+            <div id="cta-section-4" class="cta-section black-section section-xs-padding">
+                <!-- Section Container -->
+                <div class="section-container">
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect gfort-background">
+                        <img src="images/cta/cta-004.jpg" alt="Parallax Background Image" style="top: 0px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- CTA Block -->
+                            <div class="col-md-12 cta-block">
+                                <!-- CTA Block Container -->
+                                <div class="cta-block-container white-content">
+
+                                    <!-- Title -->
+                                    <h3>Tip: Implementáciou podrobnejších informácií o objednávke zvyšujete svoju prehľadnosť o zákazníkoch.</h3>
+
+                                </div><!-- /End CTA Block Container -->
+                            </div><!-- /End CTA Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End CTA 4 --><!-- Timeline 2
+            ==================================================================== -->
+            <div id="timeline-section-2" class="timeline-section grey-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container text-center">
+
+                                    <!-- Title -->
+                                    <h2>Vlastná integrácia <br /><small>4 jednoduché kroky</small></h2>
+
+                                    <!-- Description -->
+                                    <p>Akákoľvek internetová aplikácia postavená na PHP, móže integrovať novú modernú PHP eCard knižnicu. Stačí postupovať podľa krokov nižšie.</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                            <!-- Timeline Block -->
+                            <div class="col-md-12 timeline-block timeline-block-center">
+                                <!-- Timeline Block Container -->
+                                <div class="timeline-block-container">
+
+                                    <!-- Timeline Block Item -->
+                                    <div class="timeline-block-item">
+                                        <!-- Timeline Block Item Container -->
+                                        <div class="timeline-block-item-container">
+
+
+                                            <!-- Post Block -->
+                                            <div class="post-block">
+                                                <!-- Post Block Container -->
+                                                <div class="post-block-container">
+
+
+                                                    <!-- Post Header -->
+                                                    <div>
+                                                        <!-- Title -->
+                                                        <h4>1) Presunutie knižnice do projektu</h4>
+                                                    </div><!-- /End Post Header -->
+
+
+                                                    <!-- Post Footer -->
+                                                    <div class="post-footer">
+                                                        <!-- Description -->
+                                                        <p>Je nutné presunúť knižnicu do Vašej aplikácie. Pokial aplikácia podporuje composer, tak knižnica sa načíta automaticky v zmysle integrácie <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a>.
+                                                          <br /><br />V prípade, že aplikácia nemá composer, stači načítat <i>autoload.php</i>. Vďaka <i>namespace</i> je možné volať VubEcard objekt.</p>
+                                                        <br />
+                                                        <pre>&lt;?php
+<span class="entity">require_once</span>('CESTA/KU/KNIZNICI/lib/autoload.php');
+
+<i>/* INICIALIZACIA OBJEKTU, VSTUPNE HODNOTY DODANE VUB */</i>
+<span class="variable">$vub</span> = <span class="entity">new</span> VubEcard\VubEcard(<span class="argument">ID</span>, <span class="argument">STORE_KEY</span>);</pre>
+
+                                                    </div><!-- /End Post Footer -->
+
+                                                    <div class="text-center visible-xs visible-sm"><div class="line-separator"></div></div>
+
+                                                </div><!-- /End Post Block Container -->
+
+                                            </div><!-- /End Post Block -->
+
+                                        </div><!-- /End Timeline Block Item Container -->
+
+
+                                    </div><!-- /End Timeline Block Item -->
+
+
+                                    <!-- Timeline Block Item -->
+                                    <div class="timeline-block-item">
+                                        <!-- Timeline Block Item Container -->
+                                        <div class="timeline-block-item-container">
+
+                                            <!-- Post Block -->
+                                            <div class="post-block">
+                                                <!-- Post Block Container -->
+                                                <div class="post-block-container">
+
+                                                    <!-- Post Header -->
+                                                    <div>
+                                                        <!-- Title -->
+                                                        <h4>2) Získanie prihlasovacích hodnôt</h4>
+                                                    </div><!-- /End Post Header -->
+
+                                                    <video width="100%" controls>
+                                                      <source src="video/store_key.mp4" type="video/mp4">
+                                                      Váš internetovy prehliadač nepodporuje prehrávanie videa pomocou HTML5
+                                                    </video>
+
+
+                                                    <!-- Post Footer -->
+                                                    <div class="post-footer">
+
+                                                        <!-- Description -->
+                                                        <p>Pomocou VÚB eCard portálu získame základné identifikačné údaje. Video znázornuje kde sa nachádzajú a ktoré identifikačné údaje sú dôležité. Konkrétne potrebujeme VÚB Client ID a Store Key.</p>
+
+
+                                                        <!-- Buttons -->
+                                                        <a href="https://vub.eway2pay.com/vub/report/user.login?language=null?opr=sto" title="VÚB eCard" target="_blank" class="btn btn-gfort wave-effect"><u>VÚB eCard</u> prihlásenie <i class="fa fa-external-link"></i></a>
+
+                                                        <br /><br />
+                                                        <a href="https://testsecurepay.intesasanpaolocard.com/vub/report/user.login?language=sk" title="VÚB eCard" target="_blank" class=""><u>VÚB eCard</u> testovacie rozhranie <i class="fa fa-external-link"></i></a>
+
+
+
+
+                                                    </div><!-- /End Post Footer -->
+
+                                                    <div class="text-center visible-xs visible-sm"><div class="line-separator"></div></div>
+
+                                                </div><!-- /End Post Block Container -->
+                                            </div><!-- /End Post Block -->
+
+
+                                        </div><!-- /End Timeline Block Item Container -->
+                                    </div><!-- /End Timeline Block Item -->
+
+
+                                    <!-- Timeline Block Item -->
+                                    <div class="timeline-block-item">
+                                        <!-- Timeline Block Item Container -->
+                                        <div class="timeline-block-item-container">
+
+
+                                            <!-- Post Block -->
+                                            <div class="post-block">
+                                                <!-- Post Block Container -->
+                                                <div class="post-block-container">
+
+                                                    <!-- Post Header -->
+                                                    <div>
+                                                        <!-- Title -->
+                                                        <h4>3) Nastavenie základných hodnôt</h4>
+                                                    </div><!-- /End Post Header -->
+
+                                                    <!-- Post Footer -->
+                                                    <div class="post-footer">
+
+                                                        <!-- Description -->
+                                                        <p>Získané prihlasovacie údaje, nastavíme v konštruktori <i>VubEcard.php</i> objektu. Okrem Client ID a Store Key je nevyhnutné nastaviť aj návratové url.
+                                                          Návratová url reprezentuje miesto, kam banka presmeruje odpoveď po vykonaní úspešnej/neúspešnej transakcie.</p>
+                                                          <br /><br />
+<pre>&lt;?php
+<span class="entity">require_once</span>('CESTA/KU/KNIZNICI/lib/autoload.php');
+
+<span class="variable">$vub</span> = <span class="entity">new</span> VubEcard\VubEcard(<span class="argument">10000001</span>, <span class="argument">Kreslo123987</span>, <span class="argument">null</span>, <span class="argument">true</span>);
+
+<i>/* NAVRATOVA URL DO ESHOPU V PRIPADE OK PLATBY */</i>
+<span class="variable">$vub</span>->setCallbackUrlSuccesfull('<span class="url">http://mojastranka.domena/spravna-url</span>');
+
+<i>/* NAVRATOVA URL DO ESHOPU V PRIPADE CHYBNEJ PLATBY */</i>
+<span class="variable">$vub</span>->setCallbackUrlError('<span class="url">http://mojastranka.domena/chybova-url</span>');
+</pre>
+
+                                                    </div><!-- /End Post Footer -->
+
+                                                    <div class="text-center visible-xs visible-sm"><div class="line-separator"></div></div>
+
+                                                </div><!-- /End Post Block Container -->
+                                            </div><!-- /End Post Block -->
+
+                                        </div><!-- /End Timeline Block Item Container -->
+                                    </div><!-- /End Timeline Block Item -->
+
+
+                                    <!-- Timeline Block Item -->
+                                    <div class="timeline-block-item">
+                                        <!-- Timeline Block Item Container -->
+                                        <div class="timeline-block-item-container">
+
+
+                                            <!-- Post Block -->
+                                            <div class="post-block">
+                                                <!-- Post Block Container -->
+                                                <div class="post-block-container">
+
+
+                                                    <!-- Post Header -->
+                                                    <div>
+                                                        <!-- Title -->
+                                                        <h4>4) Informácie o objednávke a sume</h4>
+                                                    </div><!-- /End Post Header -->
+
+                                                    <video width="100%" controls>
+                                                      <source src="video/generovanie_buttonu.mp4" type="video/mp4">
+                                                      Váš internetovy prehliadač nepodporuje prehrávanie videa pomocou HTML5
+                                                    </video>
+
+                                                    <!-- Post Footer -->
+                                                    <div class="post-footer">
+
+                                                        <!-- Description -->
+                                                        <p>Pre správny priebeh platby je nevyhnutné zadať unikátne ID objednávky a celkovú sumu. Suma a ID sú automaticky prenášané do VÚB eCard rozhrania. Funkčnosť je demonštrovaná na videu.</p>
+                                                        <br /><br />
+
+<pre>&lt;?php
+<span class="entity">require_once</span>('CESTA/KU/KNIZNICI/lib/autoload.php');
+
+<i>...</i>
+
+<i>/* NASTAVENIE UDAJOV O OBJEDNAVKE */</i>
+<span class="variable">$vub</span>->setOrderDetails(<span class="argument">123456</span> <i>/* ID OBJENAVKY */</i>, <span class="argument">1001</span> <i>/* CELKOVA CENA OBJEDNAVKY */</i>);
+
+<i>/* VYGENERUJE BUTTON NA ODOSLANIE KLIENTA DO BANKY */</i>
+<span class="entity">echo</span> <span class="variable">$vub</span>->generateForm(
+  <span class="argument">'vubButton'</span>,  <i>//NAZOV FORMULARA</i>
+  <span class="argument">[]</span>,           <i>//DODATOCNE INFORMACIE O OBJEDNAVKE</i>
+  <span class="argument">[]</span>,           <i>//HTML ATRIBUTY FORMULARA</i>
+  <span class="argument">['value' => 'Testovacia objednavka', 'style'=>'width:200px;']</span>
+  );
+</pre>
+
+                                                    </div><!-- /End Post Footer -->
+
+                                                    <div class="text-center visible-xs visible-sm"><div class="line-separator"></div></div>
+
+                                                </div><!-- /End Post Block Container -->
+                                            </div><!-- /End Post Block -->
+
+
+                                        </div><!-- /End Timeline Block Item Container -->
+                                    </div><!-- /End Timeline Block Item -->
+
+
+                                </div><!-- /End Timeline Block Container -->
+                            </div><!-- /End Timeline Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End Timeline 2 --><!-- CTA 4
+            ==================================================================== -->
+            <div id="cta-section-4" class="cta-section black-section section-xs-padding">
+                <!-- Section Container -->
+                <div class="section-container">
+
+                    <!-- Background Image Block -->
+                    <div class="background-image-block parallax-effect gfort-background">
+                        <img src="images/cta/cta-004.jpg" alt="Parallax Background Image" style="top: 0px; transform: translate(-50%, 0px);">
+                    </div><!-- /End Background Image Block -->
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- CTA Block -->
+                            <div class="col-md-12 cta-block">
+                                <!-- CTA Block Container -->
+                                <div class="cta-block-container white-content">
+
+                                    <!-- Title -->
+                                    <h3>Tip: Vďaka <i>autoload.php</i> zjednodušeniu je integrácia jednoduchá a nenáročná</h3>
+
+                                </div><!-- /End CTA Block Container -->
+                            </div><!-- /End CTA Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End CTA 4 --><!-- FAQ 1
+            ==================================================================== -->
+            <div id="faq-section-1" class="faq-section white-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Title Block -->
+                            <div class="col-lg-10 col-lg-offset-1 col-md-12 title-block">
+                                <!-- Title Block Container -->
+                                <div class="title-block-container text-center">
+
+                                    <!-- Title -->
+                                    <h2>Často kladené otázky</h2>
+
+                                    <!-- Description -->
+                                    <p>Snažíme sa objasniť Vaše otázky</p>
+
+                                    <!-- Line Separator -->
+                                    <div class="line-separator"></div>
+
+                                </div><!-- /End Title Block Container -->
+                            </div><!-- /End Title Block -->
+
+
+                            <!-- FAQ Block -->
+                            <div class="col-lg-4 col-md-6 faq-block">
+                                <!-- FAQ Block Container -->
+                                <div class="faq-block-container" style="height: 108px;">
+
+                                    <!-- Title -->
+                                    <h4>Moja aplikácia nepoužíva PHP</h4>
+
+                                    <!-- Description -->
+                                    <p>V tomto prípade je nutné postupovať podľa dokumentov dodaných pri zriadení VÚB eCard riešenia.</p>
+
+                                </div><!-- /End FAQ Block Container -->
+                            </div><!-- /End FAQ Block -->
+
+
+                            <!-- FAQ Block -->
+                            <div class="col-lg-4 col-md-6 faq-block">
+                                <!-- FAQ Block Container -->
+                                <div class="faq-block-container" style="height: 108px;">
+
+                                    <!-- Title -->
+                                    <h4>Ako nainštalujem Magento/Joomla rozšírenie?</h4>
+
+                                    <!-- Description -->
+                                    <p>Je nutné postupovať podľa priloženej príručky. V základe sa jedná len o nahratie rozšírenia a následné zadanie vstupných údajov.</p>
+
+                                </div><!-- /End FAQ Block Container -->
+                            </div><!-- /End FAQ Block -->
+
+
+                            <!-- FAQ Block -->
+                            <div class="col-lg-4 col-md-6 faq-block">
+                                <!-- FAQ Block Container -->
+                                <div class="faq-block-container" style="height: 108px;">
+
+                                    <!-- Title -->
+                                    <h4>Kde nájdem informácie o chybách?</h4>
+
+                                    <!-- Description -->
+                                    <p>Platobný systém uchováva informácie o chybovej komunikácii s bankou. Príslušný súbor sa nachádza v zložke chýb v koreňovom priečinku rozšírenia.</p>
+
+                                </div><!-- /End FAQ Block Container -->
+                            </div><!-- /End FAQ Block -->
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </div><!-- /End FAQ 1 --><!-- Copyright 6
+            ==================================================================== -->
+            <footer id="copyright-section-6" class="copyright-section white-section">
+                <!-- Section Container -->
+                <div class="section-container">
+
+
+                    <!-- container -->
+                    <div class="container">
+                        <!-- row -->
+                        <div class="row">
+
+
+                            <!-- Copyright Block -->
+                            <div class="col-md-12 copyright-block">
+                                <!-- Copyright Block Container -->
+                                <div class="copyright-block-container text-center">
+
+                                    <!-- Title -->
+                                    <p>© 2016 <a href="http://www.forbestclients.com" title="For Best Clients, s.r.o.">For Best Clients, s.r.o.</a>, všetky práva vyhradené.</p>
+
+                                </div><!-- /End Copyright Block Container -->
+                            </div><!-- /End Copyright Block -->
+
+
+                        </div><!-- /End row -->
+                    </div><!-- /End container -->
+
+
+                </div><!-- /End Section Container -->
+            </footer><!-- /End Copyright 6 --></div><!-- /End Main Wrapper -->
+
+
+
+
+        <!-- Java Script Files
+        ======================================================================== -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/mobile/mobile.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+</body></html>
