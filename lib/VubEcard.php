@@ -59,8 +59,8 @@ class VubEcard
 
     /**
      * Basic payment gate url. In the time of implementation where those:
-     * test env: https://vub.eway2pay.com/fim/est3dgate
-     * production: https://testsecurepay.intesasanpaolocard.com/fim/est3dgate
+     * test env: https://testsecurepay.eway2pay.com/fim/est3dgate
+     * production: https://vub.eway2pay.com/fim/est3dgate
      *
      * @var url
      */
