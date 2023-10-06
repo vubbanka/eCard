@@ -5,6 +5,8 @@
  */
 namespace VubEcard\helpers;
 
+use PhpParser\Node\Expr\Array_;
+
 /**
  * Class that provides supported options for language
  *
@@ -16,19 +18,19 @@ namespace VubEcard\helpers;
 class VubEcardLanguage extends \VubEcard\helpers\VubEcardHelper
 {
   /**
-   * Set of default values
+   * List of allowed languages
    *
-   * @var Array
+   * @var string[]
    */
-  private static $defaultValues = ['sk', 'en'];
+  public static $allowedLanguages = ['sk', 'en', 'cz', 'ru', 'pl', 'hu', 'de'];
 
   /**
-   * Choose default value from $defaultValues
+   * Get default value for gateway language
    * 
    * @return string Default value
    */
   public static function getDefaultValue() {
-    return self::$defaultValues[0];
+    return 'en';
   }
 
 }

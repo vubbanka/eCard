@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class VubEcard\VubEcard</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-VubEcard.html" title="Summary of VubEcard"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-VubEcard.html">
+							VubEcard<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-VubEcard.helpers.html">
+							helpers						</a>
+							</li>
+								</ul></li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-VubEcard.VubEcard.html">VubEcard</a></li>
+				<li><a href="class-VubEcard.VubLog.html">VubLog</a></li>
+			</ul>
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-VubEcard.VubException.html">VubException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class VubEcard</h1>
+
+
+	<div class="description">
+	<p>Provides access to the VUB eCard API. This class provides
+all necessary functionality for creating and handling requests. It is
+also able to build HTML form.</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-VubEcard.html">VubEcard</a><br>
+		
+
+				<b>Author:</b>
+				For Best Clients, s.r.o. <a href="&#109;&#97;&#105;&#x6c;&#x74;&#x6f;:&#105;&#110;&#102;&#x6f;&#x40;&#x66;&#111;&#114;&#98;&#101;&#x73;&#x74;&#x63;&#108;&#105;&#101;&#x6e;&#x74;&#x73;.&#99;&#111;&#109;">&#105;&#110;&#102;&#x6f;&#x40;&#x66;&#111;&#114;&#98;&#101;&#x73;&#x74;&#x63;&#108;&#105;&#101;&#x6e;&#x74;&#x73;.&#99;&#111;&#109;</a><br>
+				<b>Author:</b>
+				<a href="http://www.forbestclients.com">http://www.forbestclients.com</a><br>
+				<b>Throws:</b>
+				<code><a href="class-VubEcard.VubException.html">VubEcard\VubException</a></code><br>
+			<b>Located at</b> <a href="source-class-VubEcard.VubEcard.html#15-637" title="Go to source code">lib/VubEcard.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#103-134" title="Go to source code">__construct</a>( <span>integer <var>$clientId</var></span>, <span>string <var>$storeKey</var></span>, <span>string <var>$currency</var> = <span class="php-keyword1">null</span></span>, <span>boolean <var>$test</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Constructs base VubEcard class and sets all necessary variables</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructs base VubEcard class and sets all necessary variables</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$clientId</var></dt>
+						<dd>ClientID provided by VUB bank.</dd>
+						<dt><var>$storeKey</var></dt>
+						<dd>Store Key provided by VUB bank.</dd>
+						<dt><var>$currency</var></dt>
+						<dd>$int currency ISO 4217 Currency code https://en.wikipedia.org/wiki/ISO_4217</dd>
+						<dt><var>$test</var></dt>
+						<dd>True for test environment, false for production. Default false</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getClientId" id="_getClientId">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getClientId">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#136-143" title="Go to source code">getClientId</a>( )</code>
+
+			<div class="description short">
+				<p>Returns VUB client ID.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns VUB client ID.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>Previously set VUB client ID
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getStoreKey" id="_getStoreKey">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getStoreKey">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#145-152" title="Go to source code">getStoreKey</a>( )</code>
+
+			<div class="description short">
+				<p>Returns VUB Store Key value</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns VUB Store Key value</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>Previously set VUB store key
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setUrlPaymentGate" id="_setUrlPaymentGate">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setUrlPaymentGate">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#154-166" title="Go to source code">setUrlPaymentGate</a>( <span>string <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Set main payment gate url</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set main payment gate url</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd>Url provided by bank</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCallbackUrlSuccesfull" id="_setCallbackUrlSuccesfull">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCallbackUrlSuccesfull">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#168-180" title="Go to source code">setCallbackUrlSuccesfull</a>( <span>string <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Set callback url destination for succesfull payment</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set callback url destination for succesfull payment</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd>Url for callback after succesfull payment</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCallbackUrlError" id="_setCallbackUrlError">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCallbackUrlError">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#182-194" title="Go to source code">setCallbackUrlError</a>( <span>string <var>$url</var></span> )</code>
+
+			<div class="description short">
+				<p>Set callback url destination for unsuccesfull / error payment</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set callback url destination for unsuccesfull / error payment</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$url</var></dt>
+						<dd>Url for callback after unsuccesfull / error payment</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setConfigProperty" id="_setConfigProperty">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setConfigProperty">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#197-219" title="Go to source code">setConfigProperty</a>( <span> <var>$configPropertyName</var></span>, <span> <var>$value</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__get" id="___get">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___get">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#221-248" title="Go to source code">__get</a>( <span>string <var>$propertyName</var></span> )</code>
+
+			<div class="description short">
+				<p>Magic method for getting private properties, if property doesn't exists
+trigers notice error.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Magic method for getting private properties, if property doesn't exists
+trigers notice error.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$propertyName</var></dt>
+						<dd>Name of property which value has to be returned</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed<br>Property value
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getHash" id="_getHash">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getHash">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#250-258" title="Go to source code">getHash</a>( )</code>
+
+			<div class="description short">
+				<p>Hash is necessary part in the process of bank communication. Method
+generates hash.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Hash is necessary part in the process of bank communication. Method
+generates hash.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>Hash value
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setOrderDetails" id="_setOrderDetails">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setOrderDetails">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#298-309" title="Go to source code">setOrderDetails</a>( <span>string <var>$orderId</var></span>, <span>number <var>$orderPrice</var> = <span class="php-num">0</span></span> )</code>
+
+			<div class="description short">
+				<p>Set necessary information about order</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set necessary information about order</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$orderId</var></dt>
+						<dd>Unique identificcation for Order</dd>
+						<dt><var>$orderPrice</var></dt>
+						<dd>Amount / price of order</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addOrderItemPrice" id="_addOrderItemPrice">
+
+			<td class="attributes"><code>
+				 public 
+				number
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addOrderItemPrice">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#311-324" title="Go to source code">addOrderItemPrice</a>( <span>number <var>$price</var></span> )</code>
+
+			<div class="description short">
+				<p>Increment Order price</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Increment Order price</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$price</var></dt>
+						<dd>Price to be added to whole amount of order</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						number<br>Sum price of order
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="replaceSpecialChars" id="_replaceSpecialChars">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_replaceSpecialChars">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#326-334" title="Go to source code">replaceSpecialChars</a>( <span>string <var>$value</var></span> )</code>
+
+			<div class="description short">
+				<p>Replacing special characters from input value. Special chars are "/" and "|"</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Replacing special characters from input value. Special chars are "/" and "|"</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>$value Cleared from special chars
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateResponse" id="_validateResponse">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateResponse">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#336-366" title="Go to source code">validateResponse</a>( <span>Array <var>$post</var></span> )</code>
+
+			<div class="description short">
+				<p>Validate response from bank.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate response from bank.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$post</var></dt>
+						<dd>$_POST values from callback</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateResponseParams" id="_validateResponseParams">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateResponseParams">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#368-391" title="Go to source code">validateResponseParams</a>( <span>Array <var>$requiredParams</var></span>, <span>Array <var>$post</var></span> )</code>
+
+			<div class="description short">
+				<p>Check required parameters in bank response</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Check required parameters in bank response</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$requiredParams</var></dt>
+						<dd>List of required parameters</dd>
+						<dt><var>$post</var></dt>
+						<dd>Parameters provided from bank callback</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>Validates occurance of parameters
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateHashValue" id="_validateHashValue">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateHashValue">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#393-443" title="Go to source code">validateHashValue</a>( <span>array <var>$post</var></span> )</code>
+
+			<div class="description short">
+				<p>Validates hash response value</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validates hash response value</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$post</var></dt>
+						<dd>Parameters obtained from bank callback $_POST</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateStatusCode" id="_validateStatusCode">
+
+			<td class="attributes"><code>
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateStatusCode">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#445-472" title="Go to source code">validateStatusCode</a>( <span>array <var>$post</var></span> )</code>
+
+			<div class="description short">
+				<p>Validate status code or procesor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validate status code or procesor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$post</var></dt>
+						<dd>$_POST data obtained from callback</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean<br>True if validation is succesfull
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getErrorMessage" id="_getErrorMessage">
+
+			<td class="attributes"><code>
+				 public 
+				array|string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getErrorMessage">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#474-488" title="Go to source code">getErrorMessage</a>( )</code>
+
+			<div class="description short">
+				<p>Get error message.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Get error message.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array|string<br>TODO delete?
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validateCredentials" id="_validateCredentials">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validateCredentials">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#519-565" title="Go to source code">validateCredentials</a>( )</code>
+
+			<div class="description short">
+				<p>Validates credentials and basic setup for communication. Mainly used for validating
+VUB bank Client ID and Store Key. Generates http request, and searches for specific string values in response.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validates credentials and basic setup for communication. Mainly used for validating
+VUB bank Client ID and Store Key. Generates http request, and searches for specific string values in response.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setLang" id="_setLang">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setLang">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#567-570" title="Go to source code">setLang</a>( <span> <var>$lang</var></span> )</code>
+
+			<div class="description short">
+				<p>TODO delete</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>TODO delete</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateForm" id="_generateForm">
+
+			<td class="attributes"><code>
+				 public 
+				HTML
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateForm">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#572-593" title="Go to source code">generateForm</a>( <span>string <var>$name</var> = <span class="php-quote">''</span></span>, <span>Array <var>$optionalHiddenInputsValues</var> = []</span>, <span>Array <var>$formHtmlAttributes</var> = []</span>, <span>Array <var>$buttonHtmlAttributes</var> = []</span> )</code>
+
+			<div class="description short">
+				<p>Generates button for paying order. Button is encapsulated in form</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates button for paying order. Button is encapsulated in form</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd>Form name</dd>
+						<dt><var>$optionalHiddenInputsValues</var></dt>
+						<dd>Array containing name, value of hidden attributes</dd>
+						<dt><var>$formHtmlAttributes</var></dt>
+						<dd>Array of HTML attributes for form</dd>
+						<dt><var>$buttonHtmlAttributes</var></dt>
+						<dd>Array of HTML attributes for button</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						HTML<br>Form HTML which sends user to bank for payment
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateHiddenInputsOptional" id="_generateHiddenInputsOptional">
+
+			<td class="attributes"><code>
+				 public 
+				HTML
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateHiddenInputsOptional">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#595-618" title="Go to source code">generateHiddenInputsOptional</a>( <span>Array <var>$params</var></span> )</code>
+
+			<div class="description short">
+				<p>Generates HTML optional hidden inputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates HTML optional hidden inputs</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$params</var></dt>
+						<dd>Array containing name and attribute value</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						HTML<br>HTML of hidden inputs
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateHiddenInputs" id="_generateHiddenInputs">
+
+			<td class="attributes"><code>
+				 public 
+				HTML
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateHiddenInputs">#</a>
+			<code><a href="source-class-VubEcard.VubEcard.html#620-636" title="Go to source code">generateHiddenInputs</a>( )</code>
+
+			<div class="description short">
+				<p>Generates HTML necessary hidden inputs</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates HTML necessary hidden inputs</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						HTML<br>HTML of hidden inputs
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="HASH_PARAM_DELIMETER" id="HASH_PARAM_DELIMETER">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#27" title="Go to source code"><b>HASH_PARAM_DELIMETER</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#HASH_PARAM_DELIMETER" class="anchor">#</a>
+						<code><span class="php-quote">&quot;|&quot;</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="DEFAULT_CURRENCY_CODE" id="DEFAULT_CURRENCY_CODE">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#28" title="Go to source code"><b>DEFAULT_CURRENCY_CODE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#DEFAULT_CURRENCY_CODE" class="anchor">#</a>
+						<code><span class="php-num">978</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="HASH_ALGORYTHM_VER_2" id="HASH_ALGORYTHM_VER_2">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#29" title="Go to source code"><b>HASH_ALGORYTHM_VER_2</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#HASH_ALGORYTHM_VER_2" class="anchor">#</a>
+						<code><span class="php-quote">'Ver2'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="APPROVED_RESPONSE" id="APPROVED_RESPONSE">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#31" title="Go to source code"><b>APPROVED_RESPONSE</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#APPROVED_RESPONSE" class="anchor">#</a>
+						<code><span class="php-quote">&quot;Approved&quot;</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="DEFAULT_TEST_ORDER_ID" id="DEFAULT_TEST_ORDER_ID">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#33" title="Go to source code"><b>DEFAULT_TEST_ORDER_ID</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#DEFAULT_TEST_ORDER_ID" class="anchor">#</a>
+						<code><span class="php-num">999999</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="DEFAULT_TEST_ORDER_AMOUNT" id="DEFAULT_TEST_ORDER_AMOUNT">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-VubEcard.VubEcard.html#34" title="Go to source code"><b>DEFAULT_TEST_ORDER_AMOUNT</b></a>
+					</code>
+
+					<div class="description short">
+						
+					</div>
+
+					<div class="description detailed hidden">
+						
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#DEFAULT_TEST_ORDER_AMOUNT" class="anchor">#</a>
+						<code><span class="php-num">123321</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="VUBClientId" id="$VUBClientId">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#36-40" title="Go to source code"><var>$VUBClientId</var></a>
+
+				<div class="description short">
+					<p>Base VUB eCard client ID</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Base VUB eCard client ID</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$VUBClientId" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="VUBStoreKey" id="$VUBStoreKey">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#42-46" title="Go to source code"><var>$VUBStoreKey</var></a>
+
+				<div class="description short">
+					<p>Base VUB eCard store Key</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Base VUB eCard store Key</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$VUBStoreKey" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="callbackUrlSuccesfull" id="$callbackUrlSuccesfull">
+			<td class="attributes"><code>
+				protected  
+				url
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#48-52" title="Go to source code"><var>$callbackUrlSuccesfull</var></a>
+
+				<div class="description short">
+					<p>callback url for succesfull request</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>callback url for succesfull request</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$callbackUrlSuccesfull" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="callbackUrlError" id="$callbackUrlError">
+			<td class="attributes"><code>
+				protected  
+				url
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#54-58" title="Go to source code"><var>$callbackUrlError</var></a>
+
+				<div class="description short">
+					<p>callback url for unsuccesfull request</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>callback url for unsuccesfull request</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$callbackUrlError" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="urlPaymentGate" id="$urlPaymentGate">
+			<td class="attributes"><code>
+				protected  
+				url
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#60-67" title="Go to source code"><var>$urlPaymentGate</var></a>
+
+				<div class="description short">
+					<p>Basic payment gate url. In the time of implementation where those:
+test env: https://testsecurepay.eway2pay.com/fim/est3dgate
+production: https://vub.eway2pay.com/fim/est3dgate</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Basic payment gate url. In the time of implementation where those:
+test env: https://testsecurepay.eway2pay.com/fim/est3dgate
+production: https://vub.eway2pay.com/fim/est3dgate</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$urlPaymentGate" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="configTransactionType" id="$configTransactionType">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#70" title="Go to source code"><var>$configTransactionType</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$configTransactionType" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="configLanguage" id="$configLanguage">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#71" title="Go to source code"><var>$configLanguage</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$configLanguage" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="storeType" id="$storeType">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#72" title="Go to source code"><var>$storeType</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$storeType" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="orderId" id="$orderId">
+			<td class="attributes"><code>
+				protected  
+				mixed
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#74-78" title="Go to source code"><var>$orderId</var></a>
+
+				<div class="description short">
+					<p>External eshop Order ID</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>External eshop Order ID</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$orderId" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="orderAmount" id="$orderAmount">
+			<td class="attributes"><code>
+				protected  
+				number
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#80-84" title="Go to source code"><var>$orderAmount</var></a>
+
+				<div class="description short">
+					<p>External eshop order amount</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>External eshop order amount</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$orderAmount" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="rnd" id="$rnd">
+			<td class="attributes"><code>
+				protected  
+				
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#86" title="Go to source code"><var>$rnd</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$rnd" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="currency" id="$currency">
+			<td class="attributes"><code>
+				protected  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#87" title="Go to source code"><var>$currency</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$currency" class="anchor">#</a>
+					<code><code><a href="class-VubEcard.VubEcard.html#DEFAULT_CURRENCY_CODE">VubEcard\VubEcard::<b>DEFAULT_CURRENCY_CODE</b></a></code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="msAuthType" id="$msAuthType">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#90" title="Go to source code"><var>$msAuthType</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$msAuthType" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="msKey" id="$msKey">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#91" title="Go to source code"><var>$msKey</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$msKey" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="installment" id="$installment">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#93" title="Go to source code"><var>$installment</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$installment" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="hashAlgorithm" id="$hashAlgorithm">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#94" title="Go to source code"><var>$hashAlgorithm</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$hashAlgorithm" class="anchor">#</a>
+					<code><code><a href="class-VubEcard.VubEcard.html#HASH_ALGORYTHM_VER_2">VubEcard\VubEcard::<b>HASH_ALGORYTHM_VER_2</b></a></code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="errors" id="$errors">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-VubEcard.VubEcard.html#96" title="Go to source code"><var>$errors</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$errors" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

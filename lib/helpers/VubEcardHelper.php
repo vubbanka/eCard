@@ -16,14 +16,14 @@ abstract class VubEcardHelper
     /**
      * Stores data
      *
-     * @var Array
+     * @var array
      */
     private static $data = [];
 
     /**
      * Basic method which provide default data for VubEcard extension
      *
-     * @abstract Method that has to be implemented. Abstraction itselves has been removed due to PHP restrictions
+     * @abstract Method that has to be implemented. Abstraction itself has been removed due to PHP restrictions
      * @return mixed According to implementation
      */
     public static function getDefaultValue(){}
@@ -36,8 +36,9 @@ abstract class VubEcardHelper
      */
     public static function isAllowed($value)
     {
-      $class = get_called_class();
-      return in_array($value, $class::$data);
+        /** @var self $class */
+        $class = get_called_class();
+        return in_array($value, $class::$data);
     }
 
     /**
@@ -48,6 +49,7 @@ abstract class VubEcardHelper
      */
     public function __get($name)
     {
+        /** @var self $class */
         $class = get_called_class();
 
         if (array_key_exists($name, $class::$data)) {
@@ -72,6 +74,7 @@ abstract class VubEcardHelper
      */
     public function __isset($name)
     {
+        /** @var self $class */
         $class = get_called_class();
         return isset($class::$data[$name]);
     }
@@ -84,6 +87,7 @@ abstract class VubEcardHelper
      */
     public function __unset($name)
     {
+        /** @var self $class */
         $class = get_called_class();
         unset($class::$data[$name]);
     }

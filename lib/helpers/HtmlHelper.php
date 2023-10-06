@@ -18,8 +18,8 @@ class HtmlHelper
 {
     /**
      * Calls self::input method. Builds hidden HTML input
-     * @param  Array $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
-     * @return HTML                  HTML of created element
+     * @param  array    $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
+     * @return string                   HTML of created element
      */
     public static function inputHidden($htmlAttributes = [])
     {
@@ -28,8 +28,8 @@ class HtmlHelper
 
     /**
      * Builds HTML input
-     * @param  Array $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
-     * @return HTML                  HTML of created element
+     * @param  array $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
+     * @return string                HTML of created element
      */
     public static function input($htmlAttributes = [])
     {
@@ -39,8 +39,8 @@ class HtmlHelper
     /**
      * Builds HTML for opening form tag. Shorcut for calling tagOpen with
      * corresponding tag name
-     * @param  Array $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
-     * @return HTML                  HTML of created element
+     * @param  array $htmlAttributes Array containing HTML attribute and value. [attribute=>value]
+     * @return string                HTML of created element
      */
     public static function formOpen($htmlAttributes)
     {
@@ -50,7 +50,7 @@ class HtmlHelper
     /**
      * Builds HTML for closing form tag. Shorcut for calling tagOpen with
      * corresponding tag name
-     * @return HTML                  HTML of created element
+     * @return string                  HTML of created element
      */
     public static function formClose()
     {
@@ -60,8 +60,8 @@ class HtmlHelper
     /**
      * Build HTML opening tag according to provided inputs.
      * @param  string $tagName        Tag name to be builded
-     * @param  Array $htmlAttributes  Array containing HTML attribute and value. [attribute=>value]
-     * @return HTML                   HTML of created element
+     * @param  array $htmlAttributes  Array containing HTML attribute and value. [attribute=>value]
+     * @return string                 HTML of created element
      */
     public static function tagOpen($tagName, $htmlAttributes = [])
     {
@@ -71,7 +71,7 @@ class HtmlHelper
     /**
      * Build HTML closing tag according to provided HTML tag name.
      * @param  string $tagName        Tag name to be builded
-     * @return HTML                   HTML of created element
+     * @return string                 HTML of created element
      */
     public static function tagClose($tagName)
     {
@@ -79,13 +79,13 @@ class HtmlHelper
     }
 
     /**
-     * Concats provided array into readeable html attributes string.
+     * Concats provided array into readable html attributes string.
      *
      * @example From array of ['style'=>'color:white', 'title'=>'test'] creates resulting string
      * style="color:white" title="test"
      *
-     * @param  Array $htmlAttributes  Array containing HTML attribute and value. [attribute=>value]
-     * @return string                 Concated string of html attributes
+     * @param  array $htmlAttributes  Array containing HTML attribute and value. [attribute=>value]
+     * @return string                 Concatenated string of html attributes
      */
     public static function concatHtmlAttributes($htmlAttributes = [])
     {

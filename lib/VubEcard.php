@@ -5,8 +5,6 @@
  */
 namespace VubEcard;
 
-use VubEcard\VubException;
-use VubEcard\VubLog;
 use VubEcard\helpers\VubEcardTransactionType;
 use VubEcard\helpers\VubEcardLanguage;
 use VubEcard\helpers\VubEcardStoreType;
@@ -46,14 +44,14 @@ class VubEcard
     protected $VUBStoreKey;
 
     /**
-     * callback url for succesfull request
-     * @var url
+     * callback url for successful request
+     * @var string
      */
     protected $callbackUrlSuccesfull;
 
     /**
-     * callback url for unsuccesfull request
-     * @var url
+     * callback url for unsuccessful request
+     * @var string
      */
     protected $callbackUrlError;
 
@@ -62,7 +60,7 @@ class VubEcard
      * test env: https://testsecurepay.eway2pay.com/fim/est3dgate
      * production: https://vub.eway2pay.com/fim/est3dgate
      *
-     * @var url
+     * @var string
      */
     protected $urlPaymentGate;
 
@@ -565,18 +563,27 @@ class VubEcard
     }
 
     /**
-     * TODO delete
+     * Sets language of payment gateway interface.
+     * @param string $lang ISO 639-1 Language Code. Allowed values can be found in  {@see VubEcardLanguage::$allowedLanguages}
+     * @return void
      */
-    public function setLang($lang){ $this->configLanguage = $lang; }
+    public function setLang($lang){
+        if (!in_array($lang, VubEcardLanguage::$allowedLanguages)) {
+            $this->configLanguage = VubEcardLanguage::getDefaultValue();
+            return;
+        }
+
+        $this->configLanguage = strtolower($lang);
+    }
 
     /**
      * Generates button for paying order. Button is encapsulated in form
      *
      * @param  string $name                      Form name
-     * @param  Array $optionalHiddenInputsValues Array containing name, value of hidden attributes
-     * @param  Array $formHtmlAttributes         Array of HTML attributes for form
-     * @param  Array $buttonHtmlAttributes       Array of HTML attributes for button
-     * @return HTML                              Form HTML which sends user to bank for payment
+     * @param  array $optionalHiddenInputsValues Array containing name, value of hidden attributes
+     * @param  array $formHtmlAttributes         Array of HTML attributes for form
+     * @param  array $buttonHtmlAttributes       Array of HTML attributes for button
+     * @return string                              Form HTML which sends user to bank for payment
      */
     public function generateForm($name = '', $optionalHiddenInputsValues = [], $formHtmlAttributes = [], $buttonHtmlAttributes = [])
     {
@@ -595,8 +602,8 @@ class VubEcard
     /**
      * Generates HTML optional hidden inputs
      *
-     * @param  Array $params  Array containing name and attribute value
-     * @return HTML           HTML of hidden inputs
+     * @param  array $params  Array containing name and attribute value
+     * @return string           HTML of hidden inputs
      */
     public function generateHiddenInputsOptional($params)
     {
@@ -620,7 +627,7 @@ class VubEcard
     /**
      * Generates HTML necessary hidden inputs
      *
-     * @return HTML HTML of hidden inputs
+     * @return string HTML of hidden inputs
      */
     public function generateHiddenInputs()
     {

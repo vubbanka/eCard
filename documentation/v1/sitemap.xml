@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url><loc>index.html</loc></url>
+
+		<url><loc>tree.html</loc></url>
+
+			<url><loc>namespace-VubEcard.html</loc></url>
+			<url><loc>namespace-VubEcard.helpers.html</loc></url>
+
+			<url><loc>VubEcard.helpers.HtmlHelper.html</loc></url>
+			<url><loc>VubEcard.helpers.VubEcardHelper.html</loc></url>
+			<url><loc>VubEcard.helpers.VubEcardLanguage.html</loc></url>
+			<url><loc>VubEcard.helpers.VubEcardStoreType.html</loc></url>
+			<url><loc>VubEcard.helpers.VubEcardTransactionType.html</loc></url>
+			<url><loc>VubEcard.VubEcard.html</loc></url>
+			<url><loc>VubEcard.VubException.html</loc></url>
+			<url><loc>VubEcard.VubLog.html</loc></url>
+
+
+			<url><loc>source-VubEcard.html</loc></url>
+			<url><loc>source-VubException.html</loc></url>
+			<url><loc>source-VubLog.html</loc></url>
+			<url><loc>source-helpers.HtmlHelper.html</loc></url>
+			<url><loc>source-helpers.VubEcardHelper.html</loc></url>
+			<url><loc>source-helpers.VubEcardLanguage.html</loc></url>
+			<url><loc>source-helpers.VubEcardStoreType.html</loc></url>
+			<url><loc>source-helpers.VubEcardTransactionType.html</loc></url>
+</urlset>

@@ -1,0 +1,457 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class VubEcard\VubLog |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-VubEcard.html">VubEcard</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-VubEcard.helpers.html">helpers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li>
+						<a href="VubEcard.VubEcard.html">
+							VubEcard
+						</a>
+					</li>
+					<li class="active">
+						<a href="VubEcard.VubLog.html">
+							VubLog
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="VubEcard.VubException.html">
+							VubException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-VubEcard.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="VubEcard.VubLog.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-VubEcard.html">VubEcard</a>\<a href="VubEcard.VubLog.html">VubLog</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>VubLog stores errors/notices/warnings in files.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-VubLog.html#14" title="Go to source code">VubLog.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="write" id="_write">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubLog.html#47-65" title="Go to source code">write</a>(<span>int <var>$type</var></span>, <span>string <var>$message</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Writes message into file according to type
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Writes message into file according to type</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$type</var>&nbsp;&nbsp;</td>
+										<td><p>Type of error from provided error types</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$message</var>&nbsp;&nbsp;</td>
+										<td><p>Content of message to be logged</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Returns result of file_put_contents operation</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_write">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeError" id="_writeError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubLog.html#131-140" title="Go to source code">writeError</a>(<span>string <var>$message</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Logs message as a error type
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Logs message as a error type</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$message</var>&nbsp;&nbsp;</td>
+										<td><p>Log message content</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Result of method write()</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeWarning" id="_writeWarning">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubLog.html#142-151" title="Go to source code">writeWarning</a>(<span>string <var>$message</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Logs message as a warning type
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Logs message as a warning type</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$message</var>&nbsp;&nbsp;</td>
+										<td><p>Log message content</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Result of method write()</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeWarning">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="writeNotice" id="_writeNotice">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					static
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubLog.html#153-162" title="Go to source code">writeNotice</a>(<span>string <var>$message</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Logs message as a notice type
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Logs message as a notice type</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$message</var>&nbsp;&nbsp;</td>
+										<td><p>Log message content</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Result of method write()</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_writeNotice">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="LOG_TYPE_ERROR" id="LOG_TYPE_ERROR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#17-20" title="Go to source code">LOG_TYPE_ERROR</a> = <span class="php-num">0</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type Error
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type Error</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#LOG_TYPE_ERROR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="LOG_TYPE_WARNING" id="LOG_TYPE_WARNING">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#22-25" title="Go to source code">LOG_TYPE_WARNING</a> = <span class="php-num">1</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type Warning
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type Warning</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#LOG_TYPE_WARNING">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="LOG_TYPE_NOTICE" id="LOG_TYPE_NOTICE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#27-30" title="Go to source code">LOG_TYPE_NOTICE</a> = <span class="php-num">2</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type Notice
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type Notice</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#LOG_TYPE_NOTICE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FILE_ERROR" id="FILE_ERROR">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#32-35" title="Go to source code">FILE_ERROR</a> = <span class="php-str">'vub-error.log'</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type file name Error
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type file name Error</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FILE_ERROR">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FILE_WARNING" id="FILE_WARNING">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#37-40" title="Go to source code">FILE_WARNING</a> = <span class="php-str">'vub-warning.log'</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type file name Warning
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type file name Warning</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FILE_WARNING">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="FILE_NOTICE" id="FILE_NOTICE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubLog.html#42-45" title="Go to source code">FILE_NOTICE</a> = <span class="php-str">'vub-notice.log'</span></code>
+
+	<div class="expandable-collapsedView">
+		Defines log type file name Notice
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Defines log type file name Notice</p>
+</div>
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#FILE_NOTICE">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>

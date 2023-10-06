@@ -1,0 +1,1538 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>Class VubEcard\VubEcard |  API</title>
+	<link rel="stylesheet" href="assets/main.css">
+	<script src="assets/main.js" defer></script>
+</head>
+
+<body class="layout">
+	<div class="layout-aside">
+	<div class="menu">
+			<div class="menu-section">
+				<h3>Namespaces</h3>
+	<ul>
+			<li class="menuGroup-item active">
+				<a href="namespace-VubEcard.html">VubEcard</a>
+	<ul>
+			<li class="menuGroup-item">
+				<a href="namespace-VubEcard.helpers.html">helpers</a>
+			</li>
+	</ul>
+			</li>
+	</ul>
+			</div>
+
+		<div class="menu-section">
+			<h3>Classes</h3>
+			<ul>
+					<li class="active">
+						<a href="VubEcard.VubEcard.html">
+							VubEcard
+						</a>
+					</li>
+					<li>
+						<a href="VubEcard.VubLog.html">
+							VubLog
+						</a>
+					</li>
+			</ul>
+		</div>
+		<div class="menu-section">
+			<h3>Exceptions</h3>
+			<ul>
+					<li>
+						<a href="VubEcard.VubException.html">
+							VubException
+						</a>
+					</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+
+	<div class="layout-main">
+		<div class="layout-navbar">
+	<nav class="navbar">
+		<div class="navbar-left">
+			<ul class="navbar-links">
+				<li>
+					<a href="index.html">Overview</a>
+				</li>
+				<li>
+					
+						<a href="namespace-VubEcard.html">Namespace</a>
+					
+				</li>
+<li class="active"><a href="VubEcard.VubEcard.html">Class</a></li>				<li>
+					<a href="tree.html">Tree</a>
+				</li>
+			</ul>
+		</div>
+		<div class="navbar-right">
+	<div class="search" data-elements="assets/elements.js">
+		<input class="search-input" placeholder="Search class, function or namespace" autofocus>
+		<ul class="search-results"></ul>
+	</div>
+		</div>
+	</nav>
+		</div>
+
+		<div class="layout-content">
+		<h1>
+			Class <a href="namespace-VubEcard.html">VubEcard</a>\<a href="VubEcard.VubEcard.html">VubEcard</a>
+		</h1>
+
+
+	<table class="classLikeSignatureTable">
+
+
+
+
+	</table>
+		<div class="classLikeDescription">
+	<div class="description"><p>Provides access to the VUB eCard API. This class provides
+all necessary functionality for creating and handling requests. It is
+also able to build HTML form.</p>
+</div>
+		</div>
+
+
+		<div class="classLikeSection">
+			<b>Located at</b> <a href="source-VubEcard.html#23" title="Go to source code">VubEcard.php</a><br>
+		</div>
+
+
+
+		<table class="table" id="methods">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Methods</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="__construct" id="___construct">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#95-132" title="Go to source code">__construct</a>(<span>int <var>$clientId</var></span>, <span>string <var>$storeKey</var></span>, <span><var>$currency</var> = <span class="php-kw">null</span></span>, <span>bool <var>$test</var> = <span class="php-kw">false</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Constructs base VubEcard class and sets all necessary variables
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Constructs base VubEcard class and sets all necessary variables</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$clientId</var>&nbsp;&nbsp;</td>
+										<td><p>ClientID provided by VUB bank.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$storeKey</var>&nbsp;&nbsp;</td>
+										<td><p>Store Key provided by VUB bank.</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$test</var>&nbsp;&nbsp;</td>
+										<td><p>True for test environment, false for production. Default false</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___construct">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getClientId" id="_getClientId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#134-141" title="Go to source code">getClientId</a>(): int</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns VUB client ID.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns VUB client ID.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Previously set VUB client ID</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getClientId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getStoreKey" id="_getStoreKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#143-150" title="Go to source code">getStoreKey</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Returns VUB Store Key value
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Returns VUB Store Key value</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Previously set VUB store key</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getStoreKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setUrlPaymentGate" id="_setUrlPaymentGate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#152-164" title="Go to source code">setUrlPaymentGate</a>(<span>string <var>$url</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Set main payment gate url
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set main payment gate url</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>Url provided by bank</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setUrlPaymentGate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCallbackUrlSuccesfull" id="_setCallbackUrlSuccesfull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#166-178" title="Go to source code">setCallbackUrlSuccesfull</a>(<span>string <var>$url</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Set callback url destination for succesfull payment
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set callback url destination for succesfull payment</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>Url for callback after succesfull payment</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCallbackUrlSuccesfull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setCallbackUrlError" id="_setCallbackUrlError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#180-192" title="Go to source code">setCallbackUrlError</a>(<span>string <var>$url</var></span>)</code>
+
+
+	<div class="expandable-collapsedView">
+		Set callback url destination for unsuccesfull / error payment
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set callback url destination for unsuccesfull / error payment</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$url</var>&nbsp;&nbsp;</td>
+										<td><p>Url for callback after unsuccesfull / error payment</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setCallbackUrlError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setConfigProperty" id="_setConfigProperty">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#194-217" title="Go to source code">setConfigProperty</a>(<span><var>$configPropertyName</var></span>, <span><var>$value</var></span>)</code>
+
+
+
+	<div class="expandable-expandedView">
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setConfigProperty">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="__get" id="___get">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#219-246" title="Go to source code">__get</a>(<span>string <var>$propertyName</var></span>): mixed</code>
+
+
+	<div class="expandable-collapsedView">
+		Magic method for getting private properties, if property doesn't exists
+trigers notice error.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Magic method for getting private properties, if property doesn't exists
+trigers notice error.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$propertyName</var>&nbsp;&nbsp;</td>
+										<td><p>Name of property which value has to be returned</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Property value</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#___get">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getHash" id="_getHash">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#248-256" title="Go to source code">getHash</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Hash is necessary part in the process of bank communication. Method
+generates hash.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Hash is necessary part in the process of bank communication. Method
+generates hash.</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>Hash value</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getHash">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setOrderDetails" id="_setOrderDetails">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#296-307" title="Go to source code">setOrderDetails</a>(<span>string <var>$orderId</var></span>, <span>number <var>$orderPrice</var> = <span class="php-num">0</span></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Set necessary information about order
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Set necessary information about order</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$orderId</var>&nbsp;&nbsp;</td>
+										<td><p>Unique identificcation for Order</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$orderPrice</var>&nbsp;&nbsp;</td>
+										<td><p>Amount / price of order</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setOrderDetails">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="addOrderItemPrice" id="_addOrderItemPrice">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#309-322" title="Go to source code">addOrderItemPrice</a>(<span>number <var>$price</var></span>): number</code>
+
+
+	<div class="expandable-collapsedView">
+		Increment Order price
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Increment Order price</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$price</var>&nbsp;&nbsp;</td>
+										<td><p>Price to be added to whole amount of order</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Sum price of order</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_addOrderItemPrice">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="replaceSpecialChars" id="_replaceSpecialChars">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#324-332" title="Go to source code">replaceSpecialChars</a>(<span>string <var>$value</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Replacing special characters from input value. Special chars are "/" and "|"
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Replacing special characters from input value. Special chars are &quot;/&quot; and &quot;|&quot;</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>$value Cleared from special chars</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_replaceSpecialChars">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateResponse" id="_validateResponse">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#334-364" title="Go to source code">validateResponse</a>(<span>Array <var>$post</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Validate response from bank.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validate response from bank.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$post</var>&nbsp;&nbsp;</td>
+										<td><p>$_POST values from callback</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateResponse">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateResponseParams" id="_validateResponseParams">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#366-389" title="Go to source code">validateResponseParams</a>(<span>Array <var>$requiredParams</var></span>, <span>Array <var>$post</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Check required parameters in bank response
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Check required parameters in bank response</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$requiredParams</var>&nbsp;&nbsp;</td>
+										<td><p>List of required parameters</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$post</var>&nbsp;&nbsp;</td>
+										<td><p>Parameters provided from bank callback</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Validates occurance of parameters</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateResponseParams">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateHashValue" id="_validateHashValue">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#391-441" title="Go to source code">validateHashValue</a>(<span>Array <var>$post</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates hash response value
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates hash response value</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$post</var>&nbsp;&nbsp;</td>
+										<td><p>Parameters obtained from bank callback $_POST</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateHashValue">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateStatusCode" id="_validateStatusCode">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#443-470" title="Go to source code">validateStatusCode</a>(<span>Array <var>$post</var></span>): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Validate status code or procesor
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validate status code or procesor</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$post</var>&nbsp;&nbsp;</td>
+										<td><p>$_POST data obtained from callback</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>True if validation is succesfull</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateStatusCode">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="getErrorMessage" id="_getErrorMessage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#472-486" title="Go to source code">getErrorMessage</a>(): array|string</code>
+
+
+	<div class="expandable-collapsedView">
+		Get error message.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Get error message.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_getErrorMessage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="validateCredentials" id="_validateCredentials">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#517-563" title="Go to source code">validateCredentials</a>(): bool</code>
+
+
+	<div class="expandable-collapsedView">
+		Validates credentials and basic setup for communication. Mainly used for validating
+VUB bank Client ID and Store Key.…
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Validates credentials and basic setup for communication. Mainly used for validating
+VUB bank Client ID and Store Key. Generates http request, and searches for specific string values in response.</p>
+</div>
+
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_validateCredentials">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="setLang" id="_setLang">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#565-577" title="Go to source code">setLang</a>(<span>string <var>$lang</var></span>): void</code>
+
+
+	<div class="expandable-collapsedView">
+		Sets language of payment gateway interface.
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Sets language of payment gateway interface.</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$lang</var>&nbsp;&nbsp;</td>
+										<td><p>ISO 639-1 Language Code. Allowed values can be found in  {@see VubEcardLanguage::$allowedLanguages}</p>
+</td>
+									</tr>
+							</table>
+
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_setLang">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateForm" id="_generateForm">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#579-600" title="Go to source code">generateForm</a>(
+	<span>string <var>$name</var> = <span class="php-str">''</span></span>,
+	<span>array <var>$optionalHiddenInputsValues</var> = []</span>,
+	<span>array <var>$formHtmlAttributes</var> = []</span>,
+	<span>array <var>$buttonHtmlAttributes</var> = []</span>,
+): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates button for paying order. Button is encapsulated in form
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates button for paying order. Button is encapsulated in form</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$name</var>&nbsp;&nbsp;</td>
+										<td><p>Form name</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$optionalHiddenInputsValues</var>&nbsp;&nbsp;</td>
+										<td><p>Array containing name, value of hidden attributes</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$formHtmlAttributes</var>&nbsp;&nbsp;</td>
+										<td><p>Array of HTML attributes for form</p>
+</td>
+									</tr>
+									<tr>
+										<td><var>$buttonHtmlAttributes</var>&nbsp;&nbsp;</td>
+										<td><p>Array of HTML attributes for button</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>Form HTML which sends user to bank for payment</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateForm">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateHiddenInputsOptional" id="_generateHiddenInputsOptional">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#602-625" title="Go to source code">generateHiddenInputsOptional</a>(<span>array <var>$params</var></span>): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates HTML optional hidden inputs
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates HTML optional hidden inputs</p>
+</div>
+
+							<h4>Parameters</h4>
+							<table>
+									<tr>
+										<td><var>$params</var>&nbsp;&nbsp;</td>
+										<td><p>Array containing name and attribute value</p>
+</td>
+									</tr>
+							</table>
+
+							<h4>Returns</h4>
+							<div><p>HTML of hidden inputs</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateHiddenInputsOptional">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="generateHiddenInputs" id="_generateHiddenInputs">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell">
+				<code><a href="source-VubEcard.html#627-643" title="Go to source code">generateHiddenInputs</a>(): string</code>
+
+
+	<div class="expandable-collapsedView">
+		Generates HTML necessary hidden inputs
+	</div>
+
+	<div class="expandable-expandedView">
+	<div class="description"><p>Generates HTML necessary hidden inputs</p>
+</div>
+
+
+							<h4>Returns</h4>
+							<div><p>HTML of hidden inputs</p>
+</div>
+
+
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#_generateHiddenInputs">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="constants">
+			<tr>
+				<th class="table-heading sortable" colspan="3" title="Switch between natural and alphabetical order">Constants</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="HASH_PARAM_DELIMETER" id="HASH_PARAM_DELIMETER">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#25" title="Go to source code">HASH_PARAM_DELIMETER</a> = <span class="php-str">"|"</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HASH_PARAM_DELIMETER">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DEFAULT_CURRENCY_CODE" id="DEFAULT_CURRENCY_CODE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#26" title="Go to source code">DEFAULT_CURRENCY_CODE</a> = <span class="php-num">978</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEFAULT_CURRENCY_CODE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="HASH_ALGORYTHM_VER_2" id="HASH_ALGORYTHM_VER_2">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#26-27" title="Go to source code">HASH_ALGORYTHM_VER_2</a> = <span class="php-str">'Ver2'</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#HASH_ALGORYTHM_VER_2">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="APPROVED_RESPONSE" id="APPROVED_RESPONSE">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#29" title="Go to source code">APPROVED_RESPONSE</a> = <span class="php-str">"Approved"</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#APPROVED_RESPONSE">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DEFAULT_TEST_ORDER_ID" id="DEFAULT_TEST_ORDER_ID">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#31" title="Go to source code">DEFAULT_TEST_ORDER_ID</a> = <span class="php-num">999999</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEFAULT_TEST_ORDER_ID">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="DEFAULT_TEST_ORDER_AMOUNT" id="DEFAULT_TEST_ORDER_AMOUNT">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+					
+	public
+				</code>
+			</td>
+
+			<td class="table-cell">
+<code><a href="source-VubEcard.html#32" title="Go to source code">DEFAULT_TEST_ORDER_AMOUNT</a> = <span class="php-num">123321</span></code>
+
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#DEFAULT_TEST_ORDER_AMOUNT">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+
+		<table class="table" id="properties">
+			<tr>
+				<th class="table-heading sortable" colspan="4" title="Switch between natural and alphabetical order">Properties</th>
+			</tr>
+
+	<tr class="expandable collapsed" data-order="VUBClientId" id="$VUBClientId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">int</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#34-38" title="Go to source code">$VUBClientId</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$VUBClientId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="VUBStoreKey" id="$VUBStoreKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#40-44" title="Go to source code">$VUBStoreKey</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$VUBStoreKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callbackUrlSuccesfull" id="$callbackUrlSuccesfull">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#46-50" title="Go to source code">$callbackUrlSuccesfull</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$callbackUrlSuccesfull">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="callbackUrlError" id="$callbackUrlError">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#52-56" title="Go to source code">$callbackUrlError</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$callbackUrlError">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="urlPaymentGate" id="$urlPaymentGate">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">string</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#58-65" title="Go to source code">$urlPaymentGate</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$urlPaymentGate">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="configTransactionType" id="$configTransactionType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#67-68" title="Go to source code">$configTransactionType</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$configTransactionType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="configLanguage" id="$configLanguage">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#69" title="Go to source code">$configLanguage</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$configLanguage">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="storeType" id="$storeType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#70" title="Go to source code">$storeType</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$storeType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderId" id="$orderId">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">mixed</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#72-76" title="Go to source code">$orderId</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$orderId">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="orderAmount" id="$orderAmount">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap">number</code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#78-82" title="Go to source code">$orderAmount</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$orderAmount">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="rnd" id="$rnd">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#84" title="Go to source code">$rnd</a></var></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$rnd">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="currency" id="$currency">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#85" title="Go to source code">$currency</a></var> = <b><span class="active" title="VubEcard\VubEcard">self</span></b>::<a href="VubEcard.VubEcard.html#DEFAULT_CURRENCY_CODE">DEFAULT_CURRENCY_CODE</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$currency">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="msAuthType" id="$msAuthType">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#85-88" title="Go to source code">$msAuthType</a></var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$msAuthType">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="msKey" id="$msKey">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#89" title="Go to source code">$msKey</a></var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$msKey">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="installment" id="$installment">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#91" title="Go to source code">$installment</a></var> = <span class="php-str">''</span></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$installment">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="hashAlgorithm" id="$hashAlgorithm">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	protected
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#91-92" title="Go to source code">$hashAlgorithm</a></var> = <b><span class="active" title="VubEcard\VubEcard">self</span></b>::<a href="VubEcard.VubEcard.html#HASH_ALGORYTHM_VER_2">HASH_ALGORYTHM_VER_2</a></code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$hashAlgorithm">#</a>
+		</td>
+	</tr>
+	<tr class="expandable collapsed" data-order="errors" id="$errors">
+			<td class="table-cell table-shrink">
+				<code class="nowrap">
+	public
+					
+					
+				</code>
+			</td>
+
+			<td class="table-cell table-shrink">
+				<code class="nowrap"></code>
+			</td>
+
+			<td class="table-cell">
+<code><var><a href="source-VubEcard.html#92-94" title="Go to source code">$errors</a></var> = []</code>
+				
+
+	<div class="expandable-expandedView">
+	</div>
+			</td>
+		<td class="table-anchor">
+			<a href="#$errors">#</a>
+		</td>
+	</tr>
+		</table>
+
+
+		</div>
+
+		<div class="layout-footer">
+			 API documentation generated by <a href="https://www.apigen.org">ApiGen v7.0.0-alpha.6</a>
+		</div>
+	</div>
+
+	<div class="layout-rest">
+		<div class="navbar"></div>
+	</div>
+</body>
+</html>
