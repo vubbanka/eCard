@@ -23,7 +23,7 @@ class VubException extends \Exception
    * @param integer $code     Http status code
    * @param string  $previous
    */
-  public function __construct($message, $code = 0, Exception $previous = null) {
+  public function __construct($message, $code = 0, \Exception $previous = null) {
 
       VubLog::writeError($message);
 
